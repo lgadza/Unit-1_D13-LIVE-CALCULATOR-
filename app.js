@@ -44,9 +44,20 @@ const getTasksAsArray = function () {
              Take the color from the color picker ad apply it as background to every list item
     */
 // function changeTaskBackgroundColor() {
-//        const button
-//    }
+//     for (let i = 0; i < list.length; i++) {
+//          li
+//   }
+// };
 
+// const list = document.querySelectorAll("li");
+const changeTaskBackgroundColor = function () {
+  let color = document.getElementById("colorPicker").value;
+  for (let i = 0; i < list.length; i++) {
+    list[i].style.backgroundColor = color;
+  }
+};
+let list = document.querySelectorAll("ul>li");
+console.log(list);
 /* ### EXTRA ### */
 
 /* EXERCISE 10:

@@ -12,5 +12,21 @@
   font-size: larger;
 }
 button {
-  padding: 10px;
+  background-color: coral;
+  border-radius: 5px;
+  color: white;
+  border-color: red;
+}
+
+button:hover {
+  transform: scale(0.98);
+}
+input[type="button"]:hover {
+  transform: scale(0.98);
+}
+input[type="button"] {
+  background-color: coral;
+  border-radius: 5px;
+  color: white;
+  border-color: red;
 }
