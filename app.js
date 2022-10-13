@@ -33,11 +33,21 @@ document.getElementById("removeFirstTask").onclick = function removeFirst() {
 /* EXERCISE 8:
              Create a function "getTasksAsArray" which returns, and prints to the console an array containing the tasks as strings
           */
+// const getTasksAsArray = function () {
+//   let list = document.querySelectorAll("li");
+//   let newArry = [];
+//   for (let i = 0; i < list.length; i++) {
+//     newArry.push(list[i]);
+//   }
+//   console.log(newArry);
+// };
 const getTasksAsArray = function () {
   let list = document.querySelectorAll("li");
+  let taskAsArray = [];
   for (let i = 0; i < list.length; i++) {
-    console.log(list[i]);
+    taskAsArray.push(list[i].innerText);
   }
+  console.log(taskAsArray);
 };
 /* EXERCISE 9:
              Create a function "changeTaskBackgroundColor" and attach it to the "Change task background" button via JavaScript (not via html attribute)
